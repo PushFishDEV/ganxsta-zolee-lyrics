@@ -39,3 +39,12 @@ sys.stdout.flush()
 time.sleep(1)
 
 print("GO!")
+
+file1 = open(res[fid], 'r')
+Lines = file1.readlines()
+
+count = 0
+# Strips the newline character
+for line in Lines:
+    count += 1
+    print("Line{}: {}".format(count, line.strip()))
